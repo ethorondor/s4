@@ -1,3 +1,4 @@
+#%%
 import argparse
 import os
 
@@ -257,3 +258,5 @@ def main(config: OmegaConf):
 
 if __name__ == "__main__":
     main()
+
+# %%

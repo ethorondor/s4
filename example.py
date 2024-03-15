@@ -21,6 +21,7 @@ The default CIFAR10 model trained by this file should get
 
 Each epoch takes approximately 7m20s on a T4 GPU (will be much faster on V100 / A100).
 '''
+#%%
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -376,3 +377,5 @@ for epoch in pbar:
     scheduler.step()
     # print(f"Epoch {epoch} learning rate: {scheduler.get_last_lr()}")
 
+
+# %%

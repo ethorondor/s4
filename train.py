@@ -1,3 +1,4 @@
+#%%
 import copy
 import os
 import random
@@ -830,3 +831,5 @@ def main(config: OmegaConf):
 
 if __name__ == "__main__":
     main()
+
+# %%
