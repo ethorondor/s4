@@ -154,14 +154,14 @@ testloader = torch.utils.data.DataLoader(
 class S4Model(nn.Module):
 
     def __init__(
-        self,
-        d_input,
-        d_output=10,
-        d_model=256,
-        n_layers=4,
-        dropout=0.2,
-        prenorm=False,
-    ):
+                self,
+                d_input,
+                d_output=10,
+                d_model=256,
+                n_layers=4,
+                dropout=0.2,
+                prenorm=False,
+                ):
         super().__init__()
 
         self.prenorm = prenorm
@@ -224,13 +224,13 @@ class S4Model(nn.Module):
 # Model
 print('==> Building model..')
 model = S4Model(
-    d_input=d_input,
-    d_output=d_output,
-    d_model=args.d_model,
-    n_layers=args.n_layers,
-    dropout=args.dropout,
-    prenorm=args.prenorm,
-)
+                d_input=d_input,
+                d_output=d_output,
+                d_model=args.d_model,
+                n_layers=args.n_layers,
+                dropout=args.dropout,
+                prenorm=args.prenorm,
+                )
 
 model = model.to(device)
 if device == 'cuda':

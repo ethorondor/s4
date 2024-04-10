@@ -31,9 +31,9 @@ log = src.utils.train.get_logger(__name__)
 
 # Turn on TensorFloat32 (speeds up large model training substantially)
 import torch.backends
-torch.backends.cuda.matmul.allow_tf32 = True
-torch.backends.cudnn.allow_tf32 = True
-
+torch.backends.cuda.matmul.allow_tf32 = False
+torch.backends.cudnn.allow_tf32 = False
+#%%
 
 # Lots of annoying hacks to get WandbLogger to continuously retry on failure
 class DummyExperiment:
